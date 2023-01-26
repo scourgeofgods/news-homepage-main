@@ -1,0 +1,84 @@
+$font-size: 15px;
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-grayish: hsl(236, 13%, 42%);
+$very-dark-blue: hsl(240, 100%, 5%);
+
+$primary: $soft-red;
+$secondary: $soft-orange;
+
+$font-size-root: $font-size;
+$font-size-base: 1rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+) !default;
+
+$font-family-base: "Inter", sans-serif;
+
+$font-family-sans-serif: $font-family-base;
+
+.custom-navbar {
+  position: relative;
+  .navbar-toggler {
+    transition: transform 0.25s ease-out;
+    color: black;
+    border-color: transparent !important;
+    border: none;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    &:active,
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .custom-navbar-nav {
+    a {
+      color: $dark-grayish;
+      font-weight: 400;
+      transition: all 0.4s ease-in;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.web-3 {
+  .web-3-text {
+    h1 {
+      font-weight: 800;
+      color: $very-dark-blue;
+      line-height: 1;
+    }
+    p {
+      color: $dark-grayish;
+      font-weight: 400;
+    }
+    .btn {
+      padding: 0.5rem 3rem;
+      border: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $off-white;
+      letter-spacing: 1px;
+      transition: all 0.35s ease-out;
+      &:hover {
+        background-color: $very-dark-blue;
+      }
+    }
+  }
+  .right-side {
+    background-color: $very-dark-blue;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
